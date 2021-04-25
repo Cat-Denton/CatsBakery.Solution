@@ -40,5 +40,14 @@ namespace CatsBakery.Tests
     int result = newBread.GetBreadDiscount();
     Assert.AreEqual(breadDiscount, result);
     }
+
+    [TestMethod]
+    public void GetBreadDiscount_ReturnDiscountAnyNumberBread_15()
+    {
+    int breadDiscount = 15;
+    Bread newBread = new Bread(11);
+    int result = newBread.GetBreadDiscount();
+    Assert.AreEqual(breadDiscount, result);
+    }
   }
 }
