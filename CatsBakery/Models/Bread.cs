@@ -6,5 +6,10 @@ namespace CatsBakery.Models
   public class Bread
   {
     public int BreadOrderSize { get; set; }
+
+    public Bread(int breadOrderSize)
+    {
+      BreadOrderSize = breadOrderSize;
+    }
   }
 }
