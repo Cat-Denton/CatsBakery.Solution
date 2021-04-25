@@ -14,7 +14,15 @@ namespace CatsBakery.Models
 
     public int GetBreadDiscount()
     {
-      return 0;
+      int discountCount = 0;
+      int discountAmount = 5;
+      int discountRatio = 3;
+      if (BreadOrderSize % discountRatio == 0)
+      {
+        discountCount++;
+      }
+      int breadDiscount = discountCount*discountAmount;
+      return breadDiscount;
     }
   }
 }
