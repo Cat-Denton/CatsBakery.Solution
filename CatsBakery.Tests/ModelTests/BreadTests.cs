@@ -22,5 +22,14 @@ namespace CatsBakery.Tests
       int result = newBread.BreadOrderSize;
       Assert.AreEqual(breadOrderSize,result);
     }
+
+    [TestMethod]
+    public void GetBreadDiscount_ReturnDiscountLessThan3_0()
+    {
+    int breadDiscount = 0;
+    Bread newBread = new Bread(2);
+    int result = newBread.GetBreadDiscount();
+    Assert.AreEqual(breadDiscount, result);
+    }
   }
 }

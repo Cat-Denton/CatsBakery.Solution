@@ -11,5 +11,10 @@ namespace CatsBakery.Models
     {
       BreadOrderSize = breadOrderSize;
     }
+
+    public int GetBreadDiscount()
+    {
+      return 0;
+    }
   }
 }
