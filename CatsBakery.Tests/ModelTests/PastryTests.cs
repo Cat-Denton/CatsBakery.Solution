@@ -31,5 +31,14 @@ namespace CatsBakery.Tests
       int result = newPastry.GetPastryDiscount();
       Assert.AreEqual(pastryDiscount,result);
     }
+
+    [TestMethod]
+    public void GetPastryDiscount_ReturnDiscountThreePastries_1()
+    {
+      int pastryDiscount = 1;
+      Pastry newPastry = new Pastry(3);
+      int result = newPastry.GetPastryDiscount();
+      Assert.AreEqual(pastryDiscount,result);
+    }
   }
 }
