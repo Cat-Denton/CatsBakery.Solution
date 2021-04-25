@@ -10,8 +10,17 @@ namespace CatsBakery.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry(8);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+
+    [TestMethod]
+    public void GetPastryOrderSize_ReturnsPastryORderSize_Int()
+    {
+      int pastryOrderSize = 8;
+      Pastry newPastry = new Pastry(8);
+      int result = newPastry.PastryOrderSize;
+      Assert.AreEqual(pastryOrderSize, result);
     }
   }
 }
