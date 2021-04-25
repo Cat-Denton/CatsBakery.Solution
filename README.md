@@ -1,6 +1,6 @@
-# _Title_
+# _Cat's Bakery_
 
-#### _Short Description_
+#### _A console program to calculate the cost of a bakery order. Epicodus C# Test Driven Development independent project._
 
 #### By _**Cat Denton**_
 
@@ -11,7 +11,7 @@
 
 ## Description
 
-_long description_
+_This console program takes two inputs from a user: number of loaves of bread to purchase and number of pastries to purchase. It applies the following discounts: buy two loaves of bread at $5 each and get the third free, and pastries are $2 each or 3 for $5. The program then returns the order's price in the console._
 
 ## Setup/Installation Requirements
 
@@ -20,7 +20,9 @@ _long description_
 * Open code with a text editor
 * Open terminal
 * Change directory to ProjectName.Tests
-* type "dotnet restore" in terminal and hit enter
+* Type "dotnet restore" in terminal and hit enter
+* Change directory to CatsBakery.Solution/CatsBakery
+* Type "dotnet run" in the terminal and hit enter
 
 ## Known Bugs
 
@@ -28,7 +30,7 @@ _long description_
 
 ## License
 
-Copyright <YEAR> Cat Denton
+Copyright <2021> Cat Denton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
