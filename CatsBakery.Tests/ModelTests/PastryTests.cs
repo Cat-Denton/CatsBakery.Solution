@@ -28,7 +28,7 @@ namespace CatsBakery.Tests
     {
       int pastryDiscount = 0;
       Pastry newPastry = new Pastry(2);
-      int result = newPastry.GetPastryDiscount;
+      int result = newPastry.GetPastryDiscount();
       Assert.AreEqual(pastryDiscount,result);
     }
   }

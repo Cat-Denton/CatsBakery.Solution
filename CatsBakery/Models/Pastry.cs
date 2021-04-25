@@ -11,5 +11,13 @@ namespace CatsBakery.Models
     {
       PastryOrderSize = pastryOrderSize;
     }
+
+    public int GetPastryDiscount()
+    {
+      int discountCount = 0;
+      int discountAmount = 1;
+      int pastryDiscount = discountAmount*discountCount;
+      return pastryDiscount; 
+    }
   }
 }
