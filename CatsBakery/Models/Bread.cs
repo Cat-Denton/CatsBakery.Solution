@@ -17,9 +17,13 @@ namespace CatsBakery.Models
       int discountCount = 0;
       int discountAmount = 5;
       int discountRatio = 3;
-      if (BreadOrderSize % discountRatio == 0)
+      
+      for(int i = 1; i<=BreadOrderSize; i++)
       {
-        discountCount++;
+        if (i % discountRatio == 0)
+        {
+          discountCount++;
+        }
       }
       int breadDiscount = discountCount*discountAmount;
       return breadDiscount;
