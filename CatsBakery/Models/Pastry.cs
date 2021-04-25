@@ -16,10 +16,11 @@ namespace CatsBakery.Models
     {
       int discountCount = 0;
       int discountAmount = 1;
+      int discountRatio = 3;
 
       for (int i = 1; i <= PastryOrderSize; i++)
       {
-        if (i % 3 == 0)
+        if (i % discountRatio == 0)
         {
           discountCount++;
         }
