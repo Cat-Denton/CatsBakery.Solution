@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System;
 
-namespace ProjectName.Models
+namespace CatsBakery.Models
 {
-  public class ClassName
+  public class Bread
   {
     
   }

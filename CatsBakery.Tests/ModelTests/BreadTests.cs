@@ -1,11 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using ProjectName.Models;
+using CatsBakery.Models;
 
-namespace ProjectName.Tests
+namespace CatsBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class BreadTests
   {
     
   }
