@@ -28,7 +28,8 @@ namespace CatsBakery.Models
 
     public int GetBreadPrice()
     {
-      return 0;
+      int pricePerLoaf = 5;
+      return BreadOrderSize*pricePerLoaf;
     }
   }
 }
