@@ -15,7 +15,7 @@ namespace CatsBakery
       Bread breadOrder = new Bread(numberBread);
       Pastry pastryOrder = new Pastry(numberPastry);
       int discountTotal = breadOrder.GetBreadDiscount() + pastryOrder.GetPastryDiscount();
-      int orderTotal = 5*numberBread + 2*numberPastry - discountTotal;
+      int orderTotal = breadOrder.GetBreadPrice() + pastryOrder.GetPastryPrice() - discountTotal;
       Console.WriteLine("Your order of {0} loaves of bread and {1} pastries comes to a total of ${2}.", numberBread, numberPastry, orderTotal);
     }
   }
