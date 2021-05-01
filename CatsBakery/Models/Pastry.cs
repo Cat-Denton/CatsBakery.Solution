@@ -21,10 +21,6 @@ namespace CatsBakery.Models
         {
           discountCount++;
         }
-        else 
-        {
-          discountCount = discountCount;
-        }
       }
 
       int pastryDiscount = discountAmount*discountCount;
@@ -33,7 +29,8 @@ namespace CatsBakery.Models
 
     public int GetPastryPrice()
     {
-      return 0;
+      int pricePerPastry = 2;
+      return PastryOrderSize*pricePerPastry;
     }
   }
 }
