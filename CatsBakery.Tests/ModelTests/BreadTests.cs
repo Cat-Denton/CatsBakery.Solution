@@ -58,5 +58,15 @@ namespace CatsBakery.Tests
       int result = newBread.GetBreadPrice();
       Assert.AreEqual(breadPrice,result);
     }
+
+    [TestMethod]
+    public void GetBreadPrice_ReturnPriceMultipleLoaves_15()
+    {
+      int breadPrice = 15;
+      Bread newBread = new Bread(3);
+      int result = newBread.GetBreadPrice();
+      Assert.AreEqual(breadPrice,result);
+    }
+    
   }
 }
