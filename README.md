@@ -20,7 +20,7 @@ _This console program takes two inputs from a user: number of loaves of bread to
 * Open code with a text editor
 * Open terminal
 * Change directory to CatsBakery.Tests
-* Type "dotnet restore" in terminal and hit enter
+* Type "dotnet build" in terminal and hit enter
 * Change directory to CatsBakery.Solution/CatsBakery
 * Type "dotnet run" in the terminal and hit enter
 * To test business logic type "dotnet test" in the CatsBakery.Tests directory
