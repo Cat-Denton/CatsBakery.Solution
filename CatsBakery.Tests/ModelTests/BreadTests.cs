@@ -26,28 +26,37 @@ namespace CatsBakery.Tests
     [TestMethod]
     public void GetBreadDiscount_ReturnDiscountLessThan3_0()
     {
-    int breadDiscount = 0;
-    Bread newBread = new Bread(2);
-    int result = newBread.GetBreadDiscount();
-    Assert.AreEqual(breadDiscount, result);
+      int breadDiscount = 0;
+      Bread newBread = new Bread(2);
+      int result = newBread.GetBreadDiscount();
+      Assert.AreEqual(breadDiscount, result);
     }
 
     [TestMethod]
     public void GetBreadDiscount_ReturnDiscountThreeBread_5()
     {
-    int breadDiscount = 5;
-    Bread newBread = new Bread(3);
-    int result = newBread.GetBreadDiscount();
-    Assert.AreEqual(breadDiscount, result);
+      int breadDiscount = 5;
+      Bread newBread = new Bread(3);
+      int result = newBread.GetBreadDiscount();
+      Assert.AreEqual(breadDiscount, result);
     }
 
     [TestMethod]
     public void GetBreadDiscount_ReturnDiscountAnyNumberBread_15()
     {
-    int breadDiscount = 15;
-    Bread newBread = new Bread(11);
-    int result = newBread.GetBreadDiscount();
-    Assert.AreEqual(breadDiscount, result);
+      int breadDiscount = 15;
+      Bread newBread = new Bread(11);
+      int result = newBread.GetBreadDiscount();
+      Assert.AreEqual(breadDiscount, result);
+    }
+
+    [TestMethod]
+    public void GetBreadPrice_ReturnPriceZeroLoaves_0()
+    {
+      int breadPrice = 0;
+      Bread newBread = new Bread(0);
+      int result = newBread.GetBreadPrice();
+      Assert.AreEqual(breadPrice,result);
     }
   }
 }
